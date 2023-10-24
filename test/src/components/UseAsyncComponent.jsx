@@ -1,4 +1,4 @@
-import {useAsync} from "@duanqs/mhooks"
+import React,{useAsync} from "@duanqs/mhooks"
 
 export default function UseAsyncComponent() {
   const { loading, error, value } = useAsync(() => {

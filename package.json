@@ -19,5 +19,9 @@
     "url": "https://github.com/duanqingsong/mhooks/issues"
   },
   "homepage": "https://github.com/duanqingsong/mhooks#readme",
-  "dependencies": {}
+  "dependencies": {
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
 }

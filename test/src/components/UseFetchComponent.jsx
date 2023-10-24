@@ -1,4 +1,5 @@
-import { useState } from "react"
+import React,{ useState } from "react"
+// eslint-disable-next-line no-unused-vars
 import {useGet,usePost} from "@duanqs/mhooks"
 
 export default function UseFetchComponent() {
@@ -12,7 +13,7 @@ export default function UseFetchComponent() {
     <div>
       <div>{id}</div>
       <button onClick={() => setId(currentId => currentId + 1)}>
-        Increment ID
+        Change id
       </button>
       <div>{loading?'loading':'done'}</div>
       <div>{JSON.stringify(error, null, 2)}</div>

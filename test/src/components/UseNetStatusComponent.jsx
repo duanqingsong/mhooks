@@ -1,4 +1,4 @@
-import {useNetStatus} from '@duanqs/mhooks'
+import React,{useNetStatus} from '@duanqs/mhooks'
 
 export default function UseNetStatusComponent() {
   const online = useNetStatus()

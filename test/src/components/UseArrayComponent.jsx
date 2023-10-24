@@ -1,13 +1,13 @@
-import {useArray} from "@duanqs/mhooks"
+import React,{useArray} from "@duanqs/mhooks"
 
 export default function UseArrayComponent() {
-  const { array, set, push, remove, filter, update, clear } = useArray([
+  const { values, set, push, remove, filter, update, clear } = useArray([
     1, 2, 3, 4, 5, 6,
   ])
 
   return (
     <div>
-      <div>{array.join(", ")}</div>
+      <div>{values.join(", ")}</div>
       <button onClick={() => push(7)}>push(7)</button>
       <button onClick={() => update(1, 9)}>update(1,9)</button>
       <button onClick={() => remove(1)}>remove(1)</button>

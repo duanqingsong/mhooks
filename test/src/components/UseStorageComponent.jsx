@@ -1,3 +1,4 @@
+import React from 'react'
 import { useSessionStorage, useLocalStorage } from "@duanqs/mhooks"
 
 export default function UseStorageComponent() {
@@ -11,7 +12,7 @@ export default function UseStorageComponent() {
       </div>
       <div style={{marginBottom:'20px'}}>
         <div>useSessionStorage</div>
-        <button onClick={() => setName("John")}>setName("John")</button>
+        <button onClick={() => setName("John")}>{`setName("John")`}</button>
         <button onClick={removeName}>removeName()</button>
       </div>
       <div>
