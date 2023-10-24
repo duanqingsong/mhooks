@@ -1,5 +1,5 @@
 {
-  "name": "mhooks",
+  "name": "@duanqs/mhooks",
   "version": "1.0.0",
   "description": "my hooks",
   "main": "index.js",
@@ -10,5 +10,13 @@
     "hooks"
   ],
   "author": "leo.duan",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duanqingsong/mhooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duanqingsong/mhooks/issues"
+  },
+  "homepage": "https://github.com/duanqingsong/mhooks#readme"
 }
