@@ -1,25 +1,25 @@
 import { useState, useEffect } from "react"
-import useEventListener from "../13-useEventListener/useEventListener"
+import useEvent from "./useEvent"
 
 /**
   用法：   
-  const isLarge = useMediaQuery("(min-width: 200px)")  
+  const isLarge = useMedia("(min-width: 200px)")  
   return <div>Large: {isLarge.toString()}</div>  
 
- * @param {*} mediaQuery 
+ * @param {*} query 
  * @returns 
  */
-export default function useMediaQuery(mediaQuery) {
+export default function useMedia(query) {
   const [isMatch, setIsMatch] = useState(false)
   const [mediaQueryList, setMediaQueryList] = useState(null)
 
   useEffect(() => {
-    const list = window.matchMedia(mediaQuery)
+    const list = window.matchMedia(query)
     setMediaQueryList(list)
     setIsMatch(list.matches)
-  }, [mediaQuery])
+  }, [query])
 
-  useEventListener("change", e => setIsMatch(e.matches), mediaQueryList)
+  useEvent("change", e => setIsMatch(e.matches), mediaQueryList)
 
   return isMatch
 }

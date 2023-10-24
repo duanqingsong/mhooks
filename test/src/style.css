@@ -1,0 +1,16 @@
+
+.menu{
+  display: flex;
+}
+.menu div{
+  background-color:#ababab;
+  padding: 0px 6px;
+  margin: 2px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu div.active{
+  background-color:brown;
+}

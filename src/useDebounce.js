@@ -11,11 +11,12 @@ import useTimeout from "./useTimeout"
       <button onClick={() => setCount(c => c + 1)}>Increment</button>  
     </div>  
   )  
+  
  * @param {*} callback 
+  * @param {*} dependencies 
  * @param {*} delay 
- * @param {*} dependencies 
  */
-export default function useDebounce(callback, delay, dependencies) {
+export default function useDebounce(callback, dependencies, delay=500) {
   const { reset, clear } = useTimeout(callback, delay)
   useEffect(reset, [...dependencies, reset])
   useEffect(clear, [clear])

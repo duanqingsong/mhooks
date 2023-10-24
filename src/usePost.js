@@ -1,18 +1,20 @@
-import useAsync from "./useAsync"
+import useFetch from "./useFetch"
 
 const DEFAULT_OPTIONS = {
   method : 'POST',
-  headers: { "Content-Type": "application/json" },
 }
 
-export default function usePost(url,data, dependencies = [],options = {},) {
-  return useAsync(() => {
-    return fetch(url, { ...DEFAULT_OPTIONS,body:JSON.stringify(data), ...options })
-    .then(res => {
-      if (res.ok) {
-        return res.json()
-      }
-      return res.json().then(json => Promise.reject(json))
-    })
-  }, dependencies)
+/**
+ * post
+ * @param {*} url 
+ * @param {*} data 
+ * @param {*} dependencies 
+ * @returns 
+ */
+export default function usePost(url,data, dependencies = []) {
+  let option={...DEFAULT_OPTIONS};
+  if(data){
+    option={...DEFAULT_OPTIONS,body:JSON.stringify(data) }
+  }
+  return useFetch(url,option,dependencies)
 }

@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react"
 /**
   用法： 
   const [key, setKey] = useState("")  
-  useEventListener("keydown", e => {  
+  useEvent("keydown", e => {  
     setKey(e.key)  
   })  
   
@@ -13,7 +13,7 @@ import { useEffect, useRef } from "react"
  * @param {*} callback 
  * @param {*} element 
  */
-export default function useEventListener(
+export default function useEvent(
   eventType,
   callback,
   element = window

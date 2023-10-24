@@ -2,7 +2,7 @@ import { useState } from "react"
 
 /**
  * const { array, set, push, filter, update, remove, clear }=useArray([1,2,3])
- * @param {*} defaultValue []
+ * @param {*} defaultValue 数组
  * @returns 
  */
 export default function useArray(defaultValue) {
