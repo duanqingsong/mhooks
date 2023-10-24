@@ -1,6 +1,6 @@
 {
   "name": "@duanqs/mhooks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "my common hooks",
   "main": "index.js",
   "scripts": {
