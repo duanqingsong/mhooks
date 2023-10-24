@@ -1,0 +1,14 @@
+{
+  "name": "mhooks",
+  "version": "1.0.0",
+  "description": "my hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hooks"
+  ],
+  "author": "leo.duan",
+  "license": "MIT"
+}
